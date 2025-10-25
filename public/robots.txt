@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://offeline.site/sitemap-index.xml
+Sitemap: https://offeline.site/sitemap.xml

@@ -1,0 +1,14 @@
+# ai.txt — guidance for AI crawlers and assistants
+# This is not a formal standard, but some AI agents read it.
+
+User-agent: *
+Allow: /
+
+# Usage policy
+Indexing: Allowed
+Summarization: Allowed
+Training: Allowed
+
+# Notes
+# Please respect robots.txt and crawl politely.
+# Primary sitemap: https://offeline.site/sitemap.xml

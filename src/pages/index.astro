@@ -3,7 +3,38 @@ import CompaSwag from '../components/CompaSwag.astro'
 import Shell from '../layouts/Shell.astro'
 ---
 
-<Shell title="Home">
+<Shell title="Home" description="Offeline is a privacy-first AI chat app that runs open-source LLMs locally on your hardware — in the browser and on desktop. Your data never leaves your machine.">
+	<script slot="head" type="application/ld+json" is:inline>{JSON.stringify({
+		'@context': 'https://schema.org',
+		'@type': 'SoftwareApplication',
+		name: 'Offeline',
+		applicationCategory: 'AIApplication',
+		operatingSystem: 'Web, Windows, macOS, Linux',
+		url: 'https://offeline.site/',
+		description: 'Private, local-first AI chat that runs open-source LLMs on your machine with browser and desktop support.',
+		offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }
+	})}</script>
+	<script slot="head" type="application/ld+json" is:inline>{JSON.stringify({
+		'@context': 'https://schema.org',
+		'@type': 'FAQPage',
+		mainEntity: [
+			{
+				'@type': 'Question',
+				name: 'Does Offeline keep my data private?',
+				acceptedAnswer: { '@type': 'Answer', text: 'Yes. Models run locally on your device and your data never leaves your machine.' }
+			},
+			{
+				'@type': 'Question',
+				name: 'Can I use Offeline offline?',
+				acceptedAnswer: { '@type': 'Answer', text: 'Yes. Download models once and run them entirely offline, including WebGPU mode in the browser.' }
+			},
+			{
+				'@type': 'Question',
+				name: 'Which platforms does Offeline support?',
+				acceptedAnswer: { '@type': 'Answer', text: 'Use Offeline on the web or as a desktop app on Windows, macOS, and Linux with multiple backends like WebGPU, Ollama, and llama.cpp.' }
+			}
+		]
+	})}</script>
 	<div class="container mx-auto">
 		<div class="text-secondary mx-auto max-w-[20rem] text-center font-medium">
 			Private AI Chat, Powered Locally

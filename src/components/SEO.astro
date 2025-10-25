@@ -1,0 +1,61 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+  image?: string; // path or absolute URL
+  noIndex?: boolean;
+}
+
+const { title, description, image, noIndex } = Astro.props as Props;
+
+const site = (Astro.site?.toString() ?? 'https://offeline.site').replace(/\/$/, '');
+const path = Astro.url.pathname || '/';
+const canonical = new URL(path, site).toString();
+
+const imageUrl = (() => {
+  try {
+    const src = image || '/favicon.ico';
+    return new URL(src, site).toString();
+  } catch {
+    return `${site}/favicon.ico`;
+  }
+})();
+
+const isProd = import.meta.env.PROD;
+const robots = noIndex || !isProd ? 'noindex, nofollow' : 'index, follow';
+const siteName = 'Offeline — Private AI';
+---
+
+<!-- Primary Meta -->
+<meta name="description" content={description ?? 'Private AI chat that runs locally. Privacy-first LLMs with browser and desktop support.'} />
+<link rel="canonical" href={canonical} />
+<meta name="robots" content={robots} />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description ?? ''} />
+<meta property="og:type" content="website" />
+<meta property="og:url" content={canonical} />
+<meta property="og:site_name" content={siteName} />
+<meta property="og:image" content={imageUrl} />
+<meta property="og:image:alt" content={title} />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description ?? ''} />
+<meta name="twitter:image" content={imageUrl} />
+
+<!-- Structured Data -->
+<script type="application/ld+json" is:inline>{JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: siteName,
+  url: site,
+  description: description ?? '',
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: `${site}/?q={search_term_string}`,
+    'query-input': 'required name=search_term_string'
+  }
+})}</script>
