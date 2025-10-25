@@ -1,5 +1,5 @@
 <p align="center">\
-<h2 align="center"> Offleine site ✺</h2>
+<h2 align="center"> Offeline site ✺</h2>
 <img src="https://res.cloudinary.com/diekemzs9/image/upload/v1744960378/image1_vezkby.png">
 <a href="https://github.com/iBz-04/offeline_site">
 </a>
