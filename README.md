@@ -1,7 +1,7 @@
 <p align="center">\
-<h2 align="center"> DevGPT Website ✺</h2>
+<h2 align="center"> Offleine site ✺</h2>
 <img src="https://res.cloudinary.com/diekemzs9/image/upload/v1744960378/image1_vezkby.png">
-<a href="https://github.com/iBz-04/devgpt_site">
+<a href="https://github.com/iBz-04/offeline_site">
 </a>
 
 ## 🚀 Project Structure
