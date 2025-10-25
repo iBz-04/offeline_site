@@ -1,0 +1,211 @@
+---
+import CompaSwag from '../components/CompaSwag.astro'
+import Shell from '../layouts/Shell.astro'
+---
+
+<Shell title="Home">
+	<div class="container mx-auto">
+		<div class="text-secondary mx-auto max-w-[20rem] text-center font-medium">
+			Bring your ideas to life with the GPT 4.1 series
+		</div>
+
+		<div class="py-16 flex justify-center">
+			<div class="w-3/4 max-w-4xl">
+				<CompaSwag />
+			</div>
+		</div>
+
+		<div class="mx-auto text-center font-medium md:max-w-[35rem]">
+			<span class="text-secondary">About:</span>
+			<h1 class="inline">
+				DevGPT turns plain‑language prompts into simple apps and sites, powered by GPT‑4.1, 4.1-mini and 4.1-nano.
+			</h1>
+		</div>
+
+		<div class="mt-10 flex justify-center">
+			<div class="w-full max-w-4xl rounded-lg overflow-hidden shadow-lg">
+				<video
+					autoplay
+					loop
+					muted
+					playsinline
+					class="w-full h-auto"
+				>
+					<source src="/demo.mp4" type="video/mp4" />
+					Your browser does not support the video tag.
+				</video>
+			</div>
+		</div>
+
+		<section class="mt-14">
+			<h2 class="mb-8 text-center text-3xl font-bold md:text-5xl">
+				DevGPT's powerful features <br /> to bring your ideas to life.
+			</h2>
+
+			<div class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+				<div class="col-span-1">
+					<h3 class="mb-2 text-xl font-bold">No-Code Web Apps</h3>
+
+					<p>
+						Create fully functional web applications just by describing what you want. 
+						No coding experience required. Simply explain your idea and DevGPT handles
+						the implementation.
+					</p>
+
+					<p class="text-secondary mt-2">
+						From e-commerce to portfolios to productivity tools - all from simple text prompts.
+					</p>
+				</div>
+
+				<div class="col-span-1">
+					<h3 class="mb-2 text-xl font-bold">Interactive UI</h3>
+
+					<p>
+						Get beautiful, responsive user interfaces that work across all devices.
+						DevGPT creates modern designs that adapt to any screen size.
+					</p>
+
+					<p class="text-secondary mt-2">
+						Customize colors, layouts, and components with simple instructions.
+					</p>
+				</div>
+
+				<div class="col-span-1">
+					<h3 class="mb-2 text-xl font-bold">Templates & Starter Projects</h3>
+
+					<p>
+						Jump-start your development with pre-built templates and starter projects.
+						DevGPT offers a variety of foundations to build upon for common use cases.
+					</p>
+
+					<p class="text-secondary mt-2">
+						From landing pages to portfolios - get a head start with templates.
+					</p>
+				</div>
+
+				<div class="col-span-1">
+					<h3 class="mb-2 text-xl font-bold">API Connections</h3>
+
+					<p>
+						Connect your application with third-party services and APIs. DevGPT
+						can integrate with payment processors, maps, social media, and more.
+					</p>
+
+					<p class="text-secondary mt-2">Expand functionality without additional development.</p>
+				</div>
+
+				<div class="col-span-1">
+					<h3 class="mb-2 text-xl font-bold">Easy to Use</h3>
+
+					<p>
+						DevGPT features an intuitive interface that anyone can master in minutes.
+						Just describe what you want in plain language and watch as your application
+						takes shape.
+					</p>
+
+					<p class="text-secondary mt-2">
+						No technical jargon or complex workflows - just simple conversations to build your app.
+					</p>
+				</div>
+
+				<div class="col-span-1">
+					<h3 class="mb-2 text-xl font-bold">Real-time Preview</h3>
+
+					<p>
+						See your application evolve as you describe new features or make changes.
+						DevGPT provides instant visual feedback so you can refine your idea on the fly.
+					</p>
+
+					<p class="text-secondary mt-2">
+						Iterate quickly based on what you see, ensuring the final product matches your vision.
+					</p>
+				</div>
+
+				<!-- <div class="col-span-1">
+					<h3 class="mb-2 text-xl font-bold">Multi-Language Support</h3>
+
+					<p>
+						DevGPT can generate applications using a wide variety of programming languages
+						and frameworks based on your specific needs and preferences.
+					</p>
+
+					<p class="text-secondary mt-2">
+						From JavaScript and Python to specialized frameworks like React, Vue, or Django - all available through simple text commands.
+					</p>
+				</div> -->
+			</div>
+		</section>
+
+		<div class="py-16 flex flex-col items-center justify-center">
+			<h3 class="text-2xl font-bold mb-6 text-center">Ready to transform your ideas into reality?</h3>
+			<a href="https://gpt-4-1-use.vercel.app/" class="inline-block bg-zinc-900 hover:bg-black dark:bg-white dark:hover:bg-zinc-200 dark:text-zinc-900 text-white font-medium py-3 px-12 rounded-full transition-all hover:shadow-md text-lg">Start Building with DevGPT</a>
+		</div>
+
+		<section class="mt-20 py-16 border border-zinc-200 dark:border-neutral-700 rounded-xl">
+			<h2 class="mb-12 text-center text-5xl font-bold">
+				DevGPT's Core Principles
+			</h2>
+
+			<div class="container mx-auto max-w-5xl">
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					<div class="col-span-1 p-8 bg-white dark:bg-neutral-800 rounded-lg border border-zinc-100 dark:border-neutral-700 shadow-sm transition-all hover:shadow-md">
+						<div class="flex items-center justify-center h-16 w-16 rounded-full bg-zinc-100 dark:bg-neutral-700 mx-auto mb-6">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-zinc-700 dark:text-zinc-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<circle cx="12" cy="12" r="10"></circle>
+								<path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+								<line x1="9" y1="9" x2="9.01" y2="9"></line>
+								<line x1="15" y1="9" x2="15.01" y2="9"></line>
+							</svg>
+						</div>
+						<h3 class="mb-4 text-2xl font-bold text-center">Accessibility</h3>
+						<p class="text-center">
+							DevGPT makes software development accessible to everyone, not just programmers.
+							We believe that anyone with an idea should be able to build it.
+						</p>
+
+						<p class="text-secondary mt-4 text-center text-sm">
+							DevGPT empowers everyone.
+						</p>
+					</div>
+
+					<div class="col-span-1 p-8 bg-white dark:bg-neutral-800 rounded-lg border border-zinc-100 dark:border-neutral-700 shadow-sm transition-all hover:shadow-md">
+						<div class="flex items-center justify-center h-16 w-16 rounded-full bg-zinc-100 dark:bg-neutral-700 mx-auto mb-6">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-zinc-700 dark:text-zinc-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<polyline points="13 2 13 9 20 9"></polyline>
+								<path d="M13 2L2 2L2 22L22 22L22 9L13 2Z"></path>
+							</svg>
+						</div>
+						<h3 class="mb-4 text-2xl font-bold text-center">Speed & Efficiency</h3>
+						<p class="text-center">
+							DevGPT reduces development time from weeks to minutes. Focus on your vision
+							and content rather than coding challenges.
+						</p>
+
+						<p class="text-secondary mt-4 text-center text-sm">
+							build your simple apps 10x faster.
+						</p>
+					</div>
+
+					<div class="col-span-1 p-8 bg-white dark:bg-neutral-800 rounded-lg border border-zinc-100 dark:border-neutral-700 shadow-sm transition-all hover:shadow-md">
+						<div class="flex items-center justify-center h-16 w-16 rounded-full bg-zinc-100 dark:bg-neutral-700 mx-auto mb-6">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-zinc-700 dark:text-zinc-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path>
+								<line x1="16" y1="8" x2="2" y2="22"></line>
+								<line x1="17.5" y1="15" x2="9" y2="15"></line>
+							</svg>
+						</div>
+						<h3 class="mb-4 text-2xl font-bold text-center">Flexibility</h3>
+						<p class="text-center">
+							Every application built with DevGPT is uniquely yours. Custom-tailored to your
+							specific requirements and adaptable to your changing needs.
+						</p>
+
+						<p class="text-secondary mt-4 text-center text-sm">
+							Start simple and evolve 
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</Shell>
